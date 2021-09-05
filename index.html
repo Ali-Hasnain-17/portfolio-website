@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Hasnain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/50401c9c20.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!--Navbar section-->
+    <nav class="navbar">
+      <a href="#header" class="nav-brand">Ali Hasnain</a>
+      <ul class="links">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+      <div class="hamburger-menu">
+        <button class="hamburger-btn" onclick="openDrawer()">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Header Section  -->
+    <header class="header" id="header">
+      <div class="info">
+        <h2>I'm Ali Hasnain</h2>
+        <h3>
+          MERN stack developer <br />
+          Student
+        </h3>
+        <button class="resume-btn">
+          <a href="resume.pdf" target="_blank">Resume</a>
+        </button>
+      </div>
+      <img src="me.jpeg" alt="Ali Hasnain" class="my-img" />
+      <section class="drawer">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeDrawer()"
+          >&times;</a
+        >
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </section>
+    </header>
+
+    <!-- About Section  -->
+    <div class="about-section" id="about">
+      <h3>Who Am I?</h3>
+      <p class="description">
+        My name is Ali Hasnain I am student at National University of Science
+        and Technology islamabad and also have been working on MERN stack
+        development for 1 year. I have created many small projects using React
+        and express. Beside MERN stack I also have knowledge of pyhon, flutter,
+        java and MySQL
+      </p>
+      <div class="skills">
+        <h4>Skills</h4>
+        <div class="skill-list">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>MySQL</li>
+            <li>Mongodb</li>
+            <li>React</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>Flutter</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education-->
+    <div class="education-section" id="education">
+      <h3>Education</h3>
+      <div class="education-list">
+        <ol>
+          <li>
+            <div class="edu">
+              <h4>BS Computer Science (2018 to 2022)</h4>
+              <ul>
+                <li>From National University Of Science and Technology</li>
+                <li>Current CGPA is 3.28</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="edu">
+              <h4>FSc (2016 to 2018)</h4>
+              <ul>
+                <li>From Fazaia Inter College E-9 Islamabad</li>
+                <li>Got 955 marks out of 1100</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="edu">
+              <h4>Matric (2014 to 2016)</h4>
+              <ul>
+                <li>From Saleem Nawaz Fazaia College Masroor Karachi</li>
+                <li>Got 975 marks out of 1050</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!--Projects-->
+    <div class="projects-section" id="projects">
+      <h3>Projects</h3>
+      <div class="projects-list">
+        <div class="project-card">
+          <div class="card-header">
+            <h3 class="title">A-Connect</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              I built a social media application named A-Connect by using
+              express.js. I used passport.js for user authentication and multer
+              for image and video upload. I used mongodb as our database for
+              this project
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="card-header">
+            <h3 class="title">Space Invaders</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              I build a space invader game in java by using object oriented
+              concepts like inheritance, polymorphism and abstraction etc. I
+              used the swing library for building the GUI of game
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="card-header">
+            <h3 class="title">Small Projects</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              Some small personal project includes chat application using web
+              sockets, web based tic tac toe game, book management system using
+              express.js and currency converter app using react.js
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contacts-->
+    <div class="contacts-section" id="contacts">
+      <h3>Contact Me</h3>
+      <ul>
+        <div class="email">
+          <div class="email-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="emails">
+            <ul>
+              <li>ahasnain.bscs18seecs@seecs.edu.pk</li>
+              <li>alihascs830@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="phone-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="phone-number">
+            <ul>
+              <li>+92 0309-9209038</li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/ali-hasnain-hasnain-975025192/"
+          ><i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/AliHasnain930">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/home.php"
+          ><i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

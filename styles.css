@@ -1,0 +1,408 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #ecfaff;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5em;
+}
+
+.navbar a {
+  color: rgb(29, 29, 131);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-brand {
+  font-size: 1.6rem;
+  letter-spacing: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+
+.header {
+  background-color: #ecfaff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.my-img {
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+}
+
+.info h2 {
+  font-size: 4rem;
+  letter-spacing: 15px;
+}
+
+.info h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.resume-btn {
+  background-color: rgb(29, 29, 131);
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+}
+
+.resume-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.drawer {
+  display: none;
+  z-index: 100000;
+}
+
+.about-section,
+.education-section,
+.projects-section,
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section h3,
+.education-section h3,
+.projects-section h3,
+.contacts-section h3 {
+  color: rgb(29, 29, 131);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.about-section p {
+  margin-top: -20px;
+  width: 700px;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+.about-section .skills {
+  width: 700px;
+  height: 250px;
+  background-color: rgb(29, 29, 131);
+  box-shadow: 20px -20px rgba(29, 29, 131, 0.3);
+  margin-top: 1em;
+}
+
+.skills h4 {
+  color: white;
+  margin-left: 0.5em;
+  margin-top: 0.2em;
+  width: 95%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  align-self: center;
+  border-bottom: 2px solid white;
+}
+
+.skills .skill-list ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  margin-top: -0.75em;
+}
+
+.education-list {
+  margin-top: -1.5em;
+  width: 700px;
+}
+
+ol {
+  margin-top: -20px;
+  list-style: none;
+}
+
+ol li {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.edu h4 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.edu ul {
+  margin-top: -0.75em;
+}
+
+.projects-list {
+  background-color: #ecfaff;
+  display: flex;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: rgb(29, 29, 131);
+  margin: 10px;
+}
+
+.card-header {
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid white;
+}
+
+.card-header .title {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-body {
+  padding: 20px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.card-body p {
+  text-align: justify;
+  font-size: 1rem;
+  margin-top: -5px;
+}
+
+.contacts-section ul {
+  list-style: none;
+}
+
+.email {
+  margin-top: -20px;
+}
+.contacts-section .email,
+.contacts-section .phone {
+  display: flex;
+  margin-left: -2em;
+}
+
+.email .email-icon,
+.email .emails,
+.phone .phone-icon,
+.phone .phone-number {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #ecfaff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  font-size: 1.3rem;
+}
+
+@media all and (max-width: 1200px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-btn {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  .hamburger-btn i {
+    color: rgb(29, 29, 131);
+  }
+
+  .drawer {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 29, 131);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .drawer a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .drawer a:hover {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .drawer .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .main-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .main-section img {
+    width: 225px;
+    height: 225px;
+  }
+
+  .info h2 {
+    font-size: 2.5rem;
+  }
+
+  .info h3 {
+    font-size: 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-brand {
+    font-size: 1.5rem;
+  }
+
+  .hamburger-btn {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .hamburger-btn i {
+    color: rgb(29, 29, 131);
+  }
+
+  .drawer {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 29, 131);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .drawer a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .drawer a:hover {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  .drawer .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .main-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .info h2 {
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+  }
+
+  .info h3 {
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+  }
+}
